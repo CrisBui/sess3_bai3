@@ -1,0 +1,19 @@
+1. Xác định các thực thể và thuộc tính
+KhoaHoc (Khóa học): MaKH (Khóa chính), TenKH, MoTa, HocPhi.
+
+GiangVien (Giảng viên): MaGV (Khóa chính), HoTen, ChuyenNganh, SoDT.
+
+HocVien (Học viên): MaHV (Khóa chính), HoTen, Email, NgayDangKy.
+
+LopHoc (Lớp học): MaLop (Khóa chính), ThoiGianHoc.
+
+2. Mô tả mối quan hệ và Giải thích lựa chọn
+KhoaHoc — LopHoc (Quan hệ 1-N): * Mô tả: Một Khóa học có thể mở nhiều Lớp học khác nhau (ví dụ: Khóa Java có lớp Sáng, lớp Tối). Nhưng một Lớp học cụ thể tại một thời điểm chỉ thuộc về duy nhất một Khóa học.
+
+GiangVien — LopHoc (Quan hệ 1-N):
+
+Mô tả: Một Giảng viên có thể phụ trách đứng lớp nhiều Lớp học. Nhưng để đảm bảo quản lý, một Lớp học tại một thời điểm chỉ do một Giảng viên phụ trách chính.
+
+HocVien — LopHoc (Quan hệ N-N):
+
+Mô tả: Một Học viên có thể đăng ký học nhiều Lớp học khác nhau. Ngược lại, một Lớp học chắc chắn sẽ chứa nhiều Học viên theo học.
